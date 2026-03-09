@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesona Semarang - Destinasi Wisata Terbaik di Jawa Tengah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header id="navbar">
+        <div class="container nav-wrapper">
+            <h1 class="logo">Explor<span>Semarang</span></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#keunggulan">Keunggulan</a></li>
+                    <li><a href="#destinasi">Destinasi</a></li>
+                </ul>
+                <a href="#cta" class="btn-nav">Mulai Perjalanan</a>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section (Attention) -->
+    <section id="beranda" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h2 class="animate-up">Jelajahi Pesona Semarang</h2>
+            <h3 class="animate-up delay-1">Permata Tersembunyi di Jantung Jawa Tengah</h3>
+            <p class="animate-up delay-2">Temukan keindahan kota metropolitan yang memutar waktu, merangkul tradisi dalam pelukan modernitas.</p>
+            <div class="hero-buttons animate-up delay-3">
+                <a href="#destinasi" class="btn btn-primary">Lihat Katalog Destinasi</a>
+                <a href="#keunggulan" class="btn btn-outline">Pelajari Lebih Lanjut</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section (Interest) -->
+    <section id="keunggulan" class="features">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Mengapa Memilih Semarang?</h2>
+                <p>Dari jejak kolonial yang megah hingga aroma kuliner legendaris, Semarang menawarkan cerita di setiap sudut kota.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal" id="sejarah-card" style="cursor: pointer;" onclick="openSejarahModal()">
+                    <div class="icon">🏛️</div>
+                    <h3>Sejarah yang Hidup</h3>
+                    <p>Berjalan diantara gedung-gedung zaman kolonial yang terawat baik, membawa Anda kembali ke era keemasan Oud Samarang dan jejak peradaban lintas budaya. <br><strong style="color: var(--primary-color); font-size: 0.9em;">(Klik untuk melihat detail)</strong></p>
+                </div>
+                <div class="feature-card reveal delay-1" id="kuliner-card" style="cursor: pointer;" onclick="openKulinerModal()">
+                    <div class="icon">🍜</div>
+                    <h3>Surga Kuliner</h3>
+                    <p>Manjakan lidah Anda dengan lumpia legendaris, tahu gimbal yang menggugah selera, dan bandeng presto yang menjadi ikon kota ini. <br><strong style="color: var(--primary-color); font-size: 0.9em;">(Klik untuk melihat detail)</strong></p>
+                </div>
+                <div class="feature-card reveal delay-2" id="alam-card" style="cursor: pointer;" onclick="openAlamModal()">
+                    <div class="icon">🌅</div>
+                    <h3>Keindahan Pantai & Perbukitan</h3>
+                    <p>Nikmati matahari terbenam di Pantai Marina, lalu bersantai di atas perbukitan Semarang Atas yang sejuk dan menakjubkan. <br><strong style="color: var(--primary-color); font-size: 0.9em;">(Klik untuk melihat detail)</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog/Gallery Section (Desire) -->
+    <section id="destinasi" class="destinasi">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Katalog Pesona Semarang</h2>
+                <p>Jelajahi destinasi ikonik yang menyimpan seribu cerita, sejarah, dan keindahan yang tidak boleh Anda lewatkan ketika berkunjung ke ibukota Jawa Tengah ini.</p>
+            </div>
+            
+            <div class="destinasi-list">
+                <!-- Lawang Sewu -->
+                <div class="destinasi-card reveal">
+                    <div class="destinasi-images">
+                        <img class="img-main" src="https://wsrv.nl/?url=upload.wikimedia.org/wikipedia/commons/c/c5/Lawang_Sewu_Front_View.jpg&w=800" alt="Lawang Sewu Utama">
+                        <img class="img-sub" src="https://wsrv.nl/?url=upload.wikimedia.org/wikipedia/commons/3/3b/Lawang_Sewu_Glass.jpg&w=600" alt="Detail Arsitektur Lawang Sewu">
+                    </div>
+                    <div class="destinasi-info">
+                        <h3>Lawang Sewu</h3>
+                        <p>Ikon kemegahan arsitektur era kolonial Belanda dengan ribuan pintu dan jendela besar yang sangat memukau. Dibangun pada tahun 1904 sebagai kantor pusat lembaga perkeretaapian Nederlandsch-Indische Spoorweg Maatschappij (NIS), gedung ini dirancang dengan gaya Eropa yang dirancang khusus untuk menyesuaikan iklim tropis Semarang.</p>
+                        <p>Menelusuri lorong-lorong panjang, ruang bawah tanah yang dulunya berfungsi sebagai pendingin alami, serta keindahan kaca patri warna-warni akan memanjakan mata sekaligus membawa Anda kembali menyusuri lorong waktu. Sebuah destinasi wajib bagi pecinta sejarah, arsitektur, maupun fotografi.</p>
+                    </div>
+                </div>
+
+                <!-- Kota Lama -->
+                <div class="destinasi-card reveal delay-1">
+                    <div class="destinasi-images">
+                        <img class="img-main" src="https://wsrv.nl/?url=upload.wikimedia.org/wikipedia/commons/e/e0/Blenduk_Church_Semarang_Java_Indonesia.jpg&w=800" alt="Gereja Blenduk Kota Lama">
+                        <img class="img-sub" src="https://wsrv.nl/?url=upload.wikimedia.org/wikipedia/commons/1/10/Kota_Lama_Semarang_1.jpg&w=600" alt="Suasana Malam Kota Lama">
+                    </div>
+                    <div class="destinasi-info">
+                        <h3>Kota Lama (Little Netherlands)</h3>
+                        <p>Sebuah kawasan harmonis yang menyimpan jejak romantisme tempo dulu dengan nuansa Eropa abad ke-18 yang masih terjaga. Dijuluki sebagai 'Little Netherlands', kawasan ini dulunya adalah pusat perdagangan dan administratif pada masa Hindia Belanda. Tata kota serta puluhan gedung peninggalannya masih dipertahankan dan telah direvitalisasi dengan sangat baik.</p>
+                        <p>Anda dapat berjalan-jalan santai mengitari Gereja Blenduk yang ikonik dengan kubah merah tembaganya, bersantai membaca buku di Taman Srigunting, bersepeda menyusuri jalanan berlapis batu andesit, atau menikmati secangkir kopi hangat di berbagai kafe klasik bernuansa estetis yang akan menggetarkan hati Anda.</p>
+                    </div>
+                </div>
+
+                <!-- Sam Poo Kong -->
+                <div class="destinasi-card reveal delay-2">
+                    <div class="destinasi-images">
+                        <img class="img-main" src="https://wsrv.nl/?url=upload.wikimedia.org/wikipedia/commons/3/33/Sam_Po_Kong.jpg&w=800" alt="Sam Poo Kong Utama">
+                        <img class="img-sub" src="https://wsrv.nl/?url=upload.wikimedia.org/wikipedia/commons/c/c6/Sam_Poo_Kong_Temple_Lampion_Roof.jpg&w=600" alt="Arsitektur Tiongkok Sam Poo Kong">
+                    </div>
+                    <div class="destinasi-info">
+                        <h3>Klenteng Sam Poo Kong</h3>
+                        <p>Kawasan bersejarah yang menjadi saksi bisu kedatangan laksamana lautan legendaris Cheng Ho di tanah Jawa, yang kini telah mengakar sebagai simbol toleransi beragama dan perpaduan budaya harmonis. Bangunan berarsitektur perpaduan gaya bangunan Tiongkok dan sentuhan khas budaya Jawa ini berdiri megah dengan dominasi warna merah terang.</p>
+                        <p>Di tempat ini, Anda dapat meresapi suasana spiritual yang menenangkan jiwa dalam balutan aroma dupa, berfoto menggunakan pakaian adat tradisional khas Tiongkok, menyaksikan relief batu berukuran raksasa yang menceritakan detail perjalanan ekspedisi, dan menikmati pilar-pilar indah memukau pelataran kelenteng.</p>
+                    </div>
+                </div>
+                
+                <!-- Kampung Pelangi -->
+                <div class="destinasi-card reveal delay-3">
+                    <div class="destinasi-images">
+                        <img class="img-main" src="https://wsrv.nl/?url=upload.wikimedia.org/wikipedia/commons/d/d4/Kampung_Pelangi_Semarang.jpg&w=800" alt="Kampung Pelangi Utama">
+                        <img class="img-sub" src="https://wsrv.nl/?url=upload.wikimedia.org/wikipedia/commons/8/81/Kampung_Pelangi_Semarang_01.jpg&w=600" alt="Seni Mural Kampung Pelangi">
+                    </div>
+                    <div class="destinasi-info">
+                        <h3>Kampung Pelangi</h3>
+                        <p>Sebuah perkampungan di pesisir bukit yang disulap dari kawasan biasa menjadi kanvas raksasa penuh warna, ceria, dan penuh energi positif bagi siapapun yang melihatnya. Terletak di Gunung Brintik, ratusan rumah warga beserta jalan dan tangganya dicat dengan perpaduan warna pelangi dan dihiasi dengan lukisan mural tiga dimensi memikat mata.</p>
+                        <p>Gerakan sosial kolektif ini tidak hanya berhasil meningkatkan perekonomian masyarakat namun telah menarik minat wisatawan internasional untuk datang, berpose, dan mengabadikan momen luar biasa di sana. Pastikan Anda berburu foto instagenik dari sela-sela pemukiman yang hidup dan meriah ini.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section (Action) -->
+    <section id="cta" class="cta">
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2>Sudah Siap Memulai Petualangan Anda?</h2>
+                <p>Jangan lewatkan momen berharga. Kunjungi Semarang dan catat kenangan indah Anda di kota ini.</p>
+                <a href="#" class="btn btn-primary btn-large" onclick="alert('Terima kasih! Kami akan segera menghubungi Anda dengan penawaran wisata terbaik.')">Rencanakan Liburan Sekarang!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h2>Explor<span>Semarang</span></h2>
+                <p>Membawa Anda lebih dekat dengan pesona asli Jawa Tengah.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Tautan Cepat</h3>
+                <ul>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#keunggulan">Tentang</a></li>
+                    <li><a href="#destinasi">Destinasi Favorit</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Hubungi Kami</h3>
+                <p>Email: hello@explorsemarang.id</p>
+                <p>Telp: +62 812-3456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ExplorSemarang. Dirancang oleh Anda.</p>
+        </div>
+    </footer>
+
+    <!-- Sejarah Modal -->
+    <div id="sejarahModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeSejarahModal()">&times;</span>
+            <div class="modal-header">
+                <h2>Jejak Sejarah yang Hidup</h2>
+                <p>Menyelami jejak masa lalu kota pelabuhan yang kaya akan cerita dan peradaban kolonial.</p>
+            </div>
+            
+            <div class="kuliner-container"> <!-- Menggunakan kembali class CSS layout untuk konsistensi -->
+                <!-- Sejarah 1 -->
+                <div class="kuliner-item">
+                    <img src="img/tugu_muda_semarang_1773082325284.png" alt="Tugu Muda Semarang">
+                    <div class="kuliner-text">
+                        <h3>Monumen Tugu Muda</h3>
+                        <p><strong>Fakta Sejarah:</strong> Monumen ini dibangun untuk mengenang semangat heroik pahlawan pemuda Semarang dalam Pertempuran Lima Hari di Semarang.</p>
+                        <p>Tugu Muda berdiri megah sebagai lambang perjuangan dan kebanggaan warga Semarang. Dikelilingi oleh taman berbentuk lingkaran yang tertata rapi indah serta berjejer dengan bangunan bersejarah ikonik lainnya seperti Lawang Sewu dan Museum Mandala Bhakti. Di malam hari, monumen ini dihiasi lampu temaram yang menawan, menciptakan suasana syahdu nan heroik.</p>
+                    </div>
+                </div>
+
+                <!-- Sejarah 2 -->
+                <div class="kuliner-item">
+                    <img src="img/oud_samarang_street_1773082363981.png" alt="Oud Samarang">
+                    <div class="kuliner-text">
+                        <h3>Oud Samarang (Kota Lama)</h3>
+                        <p><strong>Fakta Sejarah:</strong> Merupakan pusat tata niaga dan administratif utama pada abad ke-19, menyimpan puluhan gedung kuno bersejarah bergaya Eropa yang masih kokoh.</p>
+                        <p>Menjelajahi ruas jalanan batu andesit di Oud Samarang bagaikan memutar waktu kembali ke era Hindia Belanda. Arsitektur megah bergaya Eropa, kaca patri besar, pintu-pintu kayu tinggi, hingga elemen dekoratif klasik menghiasi setiap sudut kawasan. Nikmati berjalan santai melewati jalanan berhiaskan lampu jalan *vintage* yang memancarkan pesona klasik abadi.</p>
+                    </div>
+                </div>
+
+                <!-- Sejarah 3 -->
+                <div class="kuliner-item">
+                    <img src="img/stasiun_tawang_semarang_1773082344792.png" alt="Stasiun Tawang">
+                    <div class="kuliner-text">
+                        <h3>Stasiun Kereta Api Tawang</h3>
+                        <p><strong>Fakta Sejarah:</strong> Salah satu stasiun kereta api besar tertua di Indonesia yang diresmikan secara fantastis pada tahun 1914 oleh maskapai perkeretaapian NIS.</p>
+                        <p>Berdiri tegak dengan arsitektur kolonial yang khas, Stasiun Tawang memiliki pilar-pilar besar klasik serta kubah lobi yang menjadi ikon mahakarya transportasi di tanah Jawa. Setiap kali kereta api datang, Anda akan senantiasa disambut oleh dentingan instrumental lagu "Gambang Semarang". Bangunan ini mencerminkan betapa majunya peradaban maritim dan transportasi Semarang pada masa lalu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alam Modal -->
+    <div id="alamModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeAlamModal()">&times;</span>
+            <div class="modal-header">
+                <h2>Pesona Alam Semarang</h2>
+                <p>Singgah sejenak dari hiruk pikuk kota dan rasakan ketenangan alam mulai dari birunya pantai hingga sejuknya pegunungan.</p>
+            </div>
+            
+            <div class="kuliner-container"> <!-- Menggunakan kembali class CSS layout untuk konsistensi -->
+                <!-- Alam 1 -->
+                <div class="kuliner-item">
+                    <img src="https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?auto=format&fit=crop&w=800&q=80" alt="Umbul Sidomukti">
+                    <div class="kuliner-text">
+                        <h3>Kawasan Wisata Umbul Sidomukti</h3>
+                        <p><strong>Fakta Alam:</strong> Berada di lereng Gunung Ungaran dengan ketinggian 1200 mdpl, menjadikannya destinasi alam bersuhu paling sejuk di kawasan Semarang.</p>
+                        <p>Bagi Anda yang mencari udara segar pegunungan, Umbul Sidomukti adalah surga yang tersembunyi. Tempat ini menawarkan kolam renang bertingkat alami dari mata air pegunungan dengan pemandangan langsung ke lembah hijau membentang. Anda juga bisa menikmati kopi panas menyeduh suasana syahdu berbalut kabut tipis khas Semarang Atas.</p>
+                    </div>
+                </div>
+
+                <!-- Alam 2 -->
+                <div class="kuliner-item">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Pantai Marina">
+                    <div class="kuliner-text">
+                        <h3>Pantai Marina</h3>
+                        <p><strong>Fakta Alam:</strong> Pantai Marina terkenal sebagai spot terbaik untuk menikmati siluet senja (sunset) jingga terindah di pesisir utara kota Semarang.</p>
+                        <p>Semarang tidak hanya memiliki bukit, namun pesisir pantainya menjadi daya tarik romantis tersendiri. Duduk bersantai di batuan pemecah ombak sambil mendengarkan deru air laut dan menikmati angin pesisir pada sore hari sangat menenangkan jiwa. Terdapat juga penyewaan kapal kecil untuk berkeliling santai mengitari garis laut Marina yang eksotis.</p>
+                    </div>
+                </div>
+
+                <!-- Alam 3 -->
+                <div class="kuliner-item">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80" alt="Brown Canyon">
+                    <div class="kuliner-text">
+                        <h3>Brown Canyon</h3>
+                        <p><strong>Fakta Alam:</strong> Dijuluki sebagai 'Grand Canyon' versi Indonesia berkat eksotisme tebing-tebing raksasa hasil tambang pasir dan batuan alam.</p>
+                        <p>Keindahan unik yang lahir dari eksploitasi alam, Brown Canyon kini bertransformasi menjadi salah satu spot fotografi pemandangan luar ruang paling fenomenal dan *instagramable*. Tebing padas raksasa berwarna kecoklatan bersanding dengan kolam air sisa galian tambang menciptakan lanskap gersang namun artistik yang sangat memukau mata, terutama di kala senja menyapa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kuliner Modal -->
+    <div id="kulinerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeKulinerModal()">&times;</span>
+            <div class="modal-header">
+                <h2>Surga Kuliner Semarang</h2>
+                <p>Jelajahi kelezatan kuliner ikonik khas ibu kota Jawa Tengah yang legendaris.</p>
+            </div>
+            
+            <div class="kuliner-container">
+                <!-- Kuliner 1 -->
+                <div class="kuliner-item">
+                    <img src="img/lumpia_semarang.png" alt="Lumpia Semarang">
+                    <div class="kuliner-text">
+                        <h3>Lumpia Semarang</h3>
+                        <p><strong>Berita Kuliner:</strong> "Lumpia Semarang Resmi Ditetapkan Sebagai Warisan Budaya Takbenda Indonesia"</p>
+                        <p>Lumpia merupakan perpaduan mahakarya kuliner Tionghoa dan Jawa. Makanan ini berisi rebung muda yang renyah, daging ayam, dan udang yang dibungkus dengan kulit lumpia tipis lalu digoreng hingga garing. Disajikan dengan saus kental manis yang khas, acar mentimun, dan cabai rawit hijau utuh untuk memberikan sensasi yang meledak di mulut.</p>
+                    </div>
+                </div>
+
+                <!-- Kuliner 2 -->
+                <div class="kuliner-item">
+                    <img src="img/tahu_gimbal_semarang.png" alt="Tahu Gimbal Semarang">
+                    <div class="kuliner-text">
+                        <h3>Tahu Gimbal</h3>
+                        <p><strong>Berita Kuliner:</strong> "Tahu Gimbal Pak H. Edy di Taman KB Semarang Selalu Antre Pembeli Setiap Harinya"</p>
+                        <p>Sajian otentik khas Semarang yang terdiri dari tahu goreng cincang, irisan kol mentah, tauge, lontong, dan 'gimbal' (bakwan udang yang digoreng garing pinggirannya). Semua bahan tersebut kemudian disiram dengan saus bumbu kacang yang diulek kasar bersama petis udang, memberikan perpaduan rasa manis, gurih, dan aroma laut yang memanjakan lidah.</p>
+                    </div>
+                </div>
+
+                <!-- Kuliner 3 -->
+                <div class="kuliner-item">
+                    <img src="img/bandeng_presto_semarang.png" alt="Bandeng Presto Semarang">
+                    <div class="kuliner-text">
+                        <h3>Bandeng Presto</h3>
+                        <p><strong>Berita Kuliner:</strong> "Sentra Oleh-oleh Bandeng Presto Pandanaran Jadi Destinasi Wajib Wisatawan"</p>
+                        <p>Ikan bandeng yang dimasak menggunakan panci bertekanan tinggi (presto) hingga duri-durinya menjadi sangat lunak. Bandeng ini kemudian digoreng kering dengan balutan telur kocok hingga berwarna keemasan. Dinikmati bersama nasi putih hangat dan sambal terasi merah yang pedas, hidangan ini telah menjadi primadona oleh-oleh nomor satu dari Kota Semarang.</p>
+                    </div>
+                </div>
+    
+                <!-- Kuliner 4 -->
+                <div class="kuliner-item">
+                    <img src="img/wingko_babat.png" alt="Wingko Babat Semarang">
+                    <div class="kuliner-text">
+                        <h3>Wingko Babat</h3>
+                        <p><strong>Berita Kuliner:</strong> "Oleh-Oleh Khas Semarang Wingko Babat Selalu Laris Manis Diburu Wisatawan di Stasiun Tawang"</p>
+                        <p>Kue tradisional manis berbentuk bundar pipih yang terbuat dari campuran kelapa muda parut, tepung ketan, dan gula pasir. Dimasak dengan cara dipanggang hingga permukaannya agak kecoklatan dan sedikit gosong berkaramel, memberikan aroma harum kelapa bakar yang sangat khas dan memikat. Wingko Babat menjadi kudapan ringan yang sempurna untuk teman minum teh atau kopi.</p>
+                    </div>
+                </div>
+
+                <!-- Kuliner 5 -->
+                <div class="kuliner-item">
+                    <img src="img/mie_kopyok.png" alt="Mie Kopyok Semarang">
+                    <div class="kuliner-text">
+                        <h3>Mie Kopyok</h3>
+                        <p><strong>Berita Kuliner:</strong> "Mie Kopyok Pak Dhuwur, Kuliner Legendaris Semarang Sejak Tahun 1970an"</p>
+                        <p>Sajian mi khas jalanan Semarang yang unik karena tidak menggunakan daging sama sekali. Terdiri dari mi kuning basah, tauge, dan irisan tahu pong, yang disiram kuah kaldu bawang putih gurih segar. Keistimewaan utamanya terletak pada taburan kerupuk karak (kerupuk puli) yang dihancurkan kasar dan kecap manis, menghasilkan perpaduan tekstur kenyal, renyah, dan rasa bawang yang kuat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
