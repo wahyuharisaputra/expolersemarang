@@ -106,6 +106,25 @@ function closeAlamModal() {
     }, 400);
 }
 
+// Galeri Modal Logic
+const galeriModal = document.getElementById('galeriModal');
+
+function openGaleriModal() {
+    galeriModal.style.display = 'block';
+    setTimeout(() => {
+        galeriModal.classList.add('show');
+    }, 10);
+    document.body.style.overflow = 'hidden';
+}
+
+function closeGaleriModal() {
+    galeriModal.classList.remove('show');
+    setTimeout(() => {
+        galeriModal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }, 400);
+}
+
 // Menutup modal otomatis jika area di luar box diklik
 window.addEventListener('click', (event) => {
     if (event.target === kulinerModal) {
@@ -117,4 +136,50 @@ window.addEventListener('click', (event) => {
     if (event.target === alamModal) {
         closeAlamModal();
     }
+    if (event.target === galeriModal) {
+        closeGaleriModal();
+    }
 });
+
+// FAQ Accordion Logic
+const faqQuestions = document.querySelectorAll('.faq-question');
+
+faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+        // Close other open answers
+        const currentActive = document.querySelector('.faq-question.active');
+        if (currentActive && currentActive !== question) {
+            currentActive.classList.remove('active');
+            currentActive.nextElementSibling.style.maxHeight = null;
+        }
+
+        // Toggle current answer
+        question.classList.toggle('active');
+        const answer = question.nextElementSibling;
+        
+        if (question.classList.contains('active')) {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+        } else {
+            answer.style.maxHeight = null;
+        }
+    });
+});
+
+// Back to Top Button Logic
+const backToTopBtn = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        backToTopBtn.classList.add("show");
+    } else {
+        backToTopBtn.classList.remove("show");
+    }
+});
+
+backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+

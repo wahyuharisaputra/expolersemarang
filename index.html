@@ -14,10 +14,8 @@
         <div class="container nav-wrapper">
             <h1 class="logo">Explor<span>Semarang</span></h1>
             <nav>
-                <ul class="nav-links">
-                    <li><a href="#beranda">Beranda</a></li>
-                    <li><a href="#keunggulan">Keunggulan</a></li>
                     <li><a href="#destinasi">Destinasi</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                 </ul>
                 <a href="#cta" class="btn-nav">Mulai Perjalanan</a>
                 <div class="hamburger">
@@ -76,6 +74,8 @@
             <div class="section-header reveal">
                 <h2>Katalog Pesona Semarang</h2>
                 <p>Jelajahi destinasi ikonik yang menyimpan seribu cerita, sejarah, dan keindahan yang tidak boleh Anda lewatkan ketika berkunjung ke ibukota Jawa Tengah ini.</p>
+                <!-- Tombol Trigger Galeri Modal -->
+                <button class="btn btn-outline" style="margin-top: 25px; border-color: var(--primary-color); color: var(--primary-color);" onclick="openGaleriModal()">Lhat Galeri Momen Semarangan</button>
             </div>
             
             <div class="destinasi-list">
@@ -131,6 +131,87 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section id="testimoni" class="testimoni">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Kata Mereka Tentang Semarang</h2>
+                <p>Bagikan kebahagiaan dan pengalaman tak terlupakan bersama wisatawan lain yang telah berkunjung.</p>
+            </div>
+            <div class="testimoni-grid">
+                <div class="testimoni-card reveal">
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p class="review">"Kota Lama Semarang benar-benar menakjubkan di malam hari. Suasananya seperti kembali ke Eropa tempo dulu yang sangat romantis & estetis!"</p>
+                    <div class="user-info">
+                        <img src="https://i.pravatar.cc/100?img=47" alt="User 1">
+                        <div>
+                            <h4>Sarah W.</h4>
+                            <p>Jakarta, Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimoni-card reveal delay-1">
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p class="review">"Lumpia Semarang dan Tahu Gimbalnya juara banget! Bumbu kacangnya sangat otentik. Pasti akan kembali lagi untuk wisata kulinernya."</p>
+                    <div class="user-info">
+                        <img src="https://i.pravatar.cc/100?img=11" alt="User 2">
+                        <div>
+                            <h4>Budi Santoso</h4>
+                            <p>Surabaya, Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimoni-card reveal delay-2">
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p class="review">"Perjalanan ke Gunung Telomoyo sangat menyenangkan. Pemandangan sunset dari puncaknya adalah salah satu yang terbaik yang pernah saya lihat."</p>
+                    <div class="user-info">
+                        <img src="https://i.pravatar.cc/100?img=32" alt="User 3">
+                        <div>
+                            <h4>Maya & Keluarga</h4>
+                            <p>Bandung, Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Pertanyaan Sering Diajukan</h2>
+                <p>Temukan jawaban cepat untuk merencanakan perjalanan Anda ke Semarang.</p>
+            </div>
+            <div class="faq-container reveal delay-1">
+                <div class="faq-item">
+                    <button class="faq-question">Kapan waktu terbaik untuk mengunjungi Semarang?</button>
+                    <div class="faq-answer">
+                        <p>Waktu terbaik adalah selama musim kemarau (Mei hingga September) untuk menghindari hujan saat menjelajahi wisata alam dan outdoor. Namun, Semarang tetap menawan sepanjang tahun dengan beragam festival budaya.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Bagaimana cara terbaik berkeliling kota Semarang?</button>
+                    <div class="faq-answer">
+                        <p>Transportasi online (ojek/taksi) sangat mudah didapat dan terjangkau. Untuk wisata dalam kota, Anda juga bisa mencoba Bus Rapid Transit (BRT) Trans Semarang yang menghubungkan banyak titik wisata utama.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Apakah ada rekomendasi penginapan yang dekat dengan tempat wisata?</button>
+                    <div class="faq-answer">
+                        <p>Tentu, kawasan Simpang Lima dan Jalan Pemuda adalah opsi terbaik untuk akses ke pusat kota. Jika ingin nuansa bersejarah, tersedia banyak boutique hotel estetik di kawasan Kota Lama.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Apa oleh-oleh wajib selain makanan yang bisa dibawa pulang?</button>
+                    <div class="faq-answer">
+                        <p>Selain makanan, Anda bisa membeli Batik Semarangan di Kampung Batik Gedong Semarang, pernak-pernik vintage di Pasar Klitikan Kota Lama, atau kerajinan khas di sekitar Sam Poo Kong.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Call to Action Section (Action) -->
     <section id="cta" class="cta">
         <div class="container">
@@ -167,6 +248,11 @@
             <p>&copy; 2026 ExplorSemarang. Dirancang oleh Anda.</p>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
 
     <!-- Sejarah Modal -->
     <div id="sejarahModal" class="modal">
@@ -332,6 +418,40 @@
                         <p><strong>Berita Kuliner:</strong> "Mie Kopyok Pak Dhuwur, Kuliner Legendaris Semarang Sejak Tahun 1970an"</p>
                         <p>Sajian mi khas jalanan Semarang yang unik karena tidak menggunakan daging sama sekali. Terdiri dari mi kuning basah, tauge, dan irisan tahu pong, yang disiram kuah kaldu bawang putih gurih segar. Keistimewaan utamanya terletak pada taburan kerupuk karak (kerupuk puli) yang dihancurkan kasar dan kecap manis, menghasilkan perpaduan tekstur kenyal, renyah, dan rasa bawang yang kuat.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Galeri Modal -->
+    <div id="galeriModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeGaleriModal()">&times;</span>
+            <div class="modal-header">
+                <h2>Momen Semarangan</h2>
+                <p>Kepingan kenangan visual dari berbagai sudut eksotis kota Semarang.</p>
+            </div>
+            
+            <div class="galeri-grid" style="margin-top: 20px;">
+                <div class="galeri-item">
+                    <img src="img/lawang_sewu_main_1773081416476.png" alt="Lawang Sewu">
+                    <div class="galeri-overlay"><span>Lawang Sewu</span></div>
+                </div>
+                <div class="galeri-item tall">
+                    <img src="img/kota_lama_main_1773081449537.png" alt="Kota Lama">
+                    <div class="galeri-overlay"><span>Gereja Blenduk</span></div>
+                </div>
+                <div class="galeri-item">
+                    <img src="img/sam_poo_kong_sub_1773081503965.png" alt="Sam Poo Kong">
+                    <div class="galeri-overlay"><span>Sam Poo Kong</span></div>
+                </div>
+                <div class="galeri-item wide">
+                    <img src="img/umbul.jpg" alt="Umbul Sidomukti">
+                    <div class="galeri-overlay"><span>Umbul Sidomukti</span></div>
+                </div>
+                <div class="galeri-item">
+                    <img src="img/tugu_muda_semarang_1773082325284.png" alt="Tugu Muda">
+                    <div class="galeri-overlay"><span>Tugu Muda</span></div>
                 </div>
             </div>
         </div>
